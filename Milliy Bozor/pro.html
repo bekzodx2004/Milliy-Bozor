@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milliy Bozor</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+
+  <body>
+    <div class="sayt">
+      <div class="header">
+        <div class="header__icon">
+          <img src="images/header__icon.png" alt="" />
+          <button onclick="toifa()">
+            <img src="images/toifalar.png" alt="" /> Toifalar
+          </button>
+
+          <div class="toifalar">
+            <button>
+              <i
+                class="fas fa-baby-carriage"
+                style="margin-left: 12px; margin-right: 8px; color: #f215c2"
+              ></i
+              >Bolalar dunyosi
+            </button>
+            <button>
+              <i
+                class="fas fa-home"
+                style="margin-left: 12px; margin-right: 8px; color: #0061f3"
+              ></i
+              >Ko’chmas mulk
+            </button>
+            <button>
+              <i
+                class="fas fa-car"
+                style="margin-left: 12px; margin-right: 8px; color: #1cc900"
+              ></i
+              >Transport
+            </button>
+            <button>
+              <i
+                class="fas fa-tshirt"
+                style="margin-left: 12px; margin-right: 8px; color: #ff1111"
+              ></i
+              >Kiyimlar va moda
+            </button>
+            <button>
+              <i
+                class="fas fa-briefcase"
+                style="margin-left: 12px; margin-right: 8px; color: #502c0b"
+              ></i
+              >Ish uchun
+            </button>
+            <button>
+              <i
+                class="fas fa-paw"
+                style="margin-left: 12px; margin-right: 8px; color: #000000"
+              ></i
+              >Hayvonlar
+            </button>
+            <button>
+              <i
+                class="fas fa-couch"
+                style="margin-left: 12px; margin-right: 8px; color: #02b5aa"
+              ></i
+              >Mebel
+            </button>
+            <button>
+              <i
+                class="fas fa-mobile-alt"
+                style="margin-left: 12px; margin-right: 8px; color: #3c7c0a"
+              ></i
+              >Elektr jihozlari
+            </button>
+            <button>
+              <i
+                class="fa-solid fa-bell-concierge"
+                style="margin-left: 12px; margin-right: 8px; color: #ff0000"
+              ></i
+              >Xizmatlar
+            </button>
+            <button>
+              <i
+                class="fas fa-graduation-cap"
+                style="margin-left: 12px; margin-right: 8px; color: #000000"
+              ></i
+              >Ta’lim
+            </button>
+          </div>
+        </div>
+        <div class="header__navbar">
+          <ul>
+            <li><a href="home.html">Bosh menyu</a></li>
+            <li><a href="narxlar.html">Narxlar</a></li>
+            <li>
+              <a href="#">Mening profilim</a>
+              <i class="fa-solid fa-circle-user"></i>
+            </li>
+            <button class="menu" onclick="menu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="menu">
+              <div>
+                <i class="fa-solid fa-circle-user"></i>
+                <div>
+                  <h4>Bekzod</h4>
+                  <h5>id: 4867258648</h5>
+                </div>
+              </div>
+              <a href="sara.html">Saralanganlar</a>
+              <a href="#qoshimcha">Qo’shimcha xizmatlar</a>
+              <a href="#taklif">Maxsus takliflar</a>
+              <a href="dostavka.html">Dostavka xizmati</a>
+              <a href="#">Sozlamalar</a>
+              <a href="pro.html">Premium</a>
+              <a href="#">Chiqish</a>
+            </div>
+            <a href="elon.html">E’lon Berish</a>
+          </ul>
+          <form action="">
+            <div>
+              <i class="fa-solid fa-search"></i>
+              <input type="search" placeholder=" Qidirmoq..." />
+            </div>
+            <button>Uz</button>
+            <button>Ru</button>
+          </form>
+        </div>
+      </div>
+<div class="pro">
+  
+  <h2>Premium sotib olish</h2>
+  <p>It’s a one-time payment. Pay once, use for a lifetime.</p>
+
+  <div class="tugma"></div>
+
+  <div class="pro__tarif">
+ 
+
+    <div class="pro__tarif__card">
+      <h3>MBAZAR PRO</h3>
+      <h4><i class="fa-solid fa-circle-check"></i>12 soat TOP da</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>5 kun PRO tovarlarda</h4>
+      <h4><i class="fa-solid fa-circle-xmark"></i>Qo’llab quvvatlash</h4>
+      <h4><i class="fa-solid fa-circle-xmark"></i>Limitsiz</h4>
+
+      <h6>70.000 sum</h6>
+      <h5>50.000 sum <font>/ oy</font></h5>
+      <button>Sotib olish</button>
+    </div>
+    <div class="pro__tarif__card">
+      <h3>MBAZAR <font>PRO+</font></h3>
+      <h4><i class="fa-solid fa-circle-check"></i>24 soat TOP da</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>15 kun PRO tovarlarda</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>Qo’llab quvvatlash</h4>
+      <h4><i class="fa-solid fa-circle-xmark"></i>Limitsiz</h4>
+
+      <h6>140.000 sum</h6>
+      <h5>100.000 sum <font>/ oy</font></h5>
+      <button>Sotib olish</button>
+    </div>
+    <div class="pro__tarif__card">
+      <h3>MBAZAR HD<font>PRO+</font></h3>
+      <h4><i class="fa-solid fa-circle-check"></i>24 soat TOP da</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>15 kun PRO tovarlarda</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>Qo’llab quvvatlash</h4>
+      <h4><i class="fa-solid fa-circle-check"></i>Limitsiz</h4>
+
+      <h6>290.000 sum</h6>
+      <h5>250.000 sum <font>/ oy</font></h5>
+      <button>Sotib olish</button>
+    </div>
+  </div>
+
+  <div class="tolov">
+    <img src="images/click-01 1.png" alt="">
+    <img src="images/payme-01 1.png" alt="">
+    <img src="images/Uzcard-01 1.png" alt="">
+    <img src="images/Humo-01 1.png" alt="">
+  </div>
+</div>
+
+      <div class="footer">
+        <div class="footer__links">
+          <div>
+            <img src="images/header__icon.png" alt="" />
+            <p>
+              Funking is the a popular Ecommerce site. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </p>
+            <div>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+              <a href=""> <i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Track Your Order</a>
+          </div>
+          <div>
+            <h3>Store</h3>
+            <a href="">Furniture</a>
+            <a href="">Tabble</a>
+            <a href="">Sofa</a>
+            <a href="">Other</a>
+          </div>
+          <div>
+            <h3>Supports</h3>
+            <a href="">Feedback </a>
+            <a href="">Cotact us</a>
+            <a href="">Download app</a>
+            <a href="">Terms condition</a>
+          </div>
+        </div>
+
+        <div class="all">
+          <div>
+            <h4>© 2022 Milliy Bozor - All rights reserved.</h4>
+          </div>
+          <div>
+            <a href="">Privacy</a>
+            <a href="">Security</a>
+            <a href="">Terms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

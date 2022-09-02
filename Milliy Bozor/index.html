@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milliy Bozor</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+
+  <body>
+    <div class="sayt">
+      <div class="header">
+        <div class="header__icon">
+          <img src="images/header__icon.png" alt="" />
+          <button onclick="toifa()">
+            <img src="images/toifalar.png" alt="" /> Toifalar
+          </button>
+
+          <div class="toifalar">
+            <button>
+              <i
+                class="fas fa-baby-carriage"
+                style="margin-left: 12px; margin-right: 8px; color: #f215c2"
+              ></i
+              >Bolalar dunyosi
+            </button>
+            <button>
+              <i
+                class="fas fa-home"
+                style="margin-left: 12px; margin-right: 8px; color: #0061f3"
+              ></i
+              >Ko’chmas mulk
+            </button>
+            <button>
+              <i
+                class="fas fa-car"
+                style="margin-left: 12px; margin-right: 8px; color: #1cc900"
+              ></i
+              >Transport
+            </button>
+            <button>
+              <i
+                class="fas fa-tshirt"
+                style="margin-left: 12px; margin-right: 8px; color: #ff1111"
+              ></i
+              >Kiyimlar va moda
+            </button>
+            <button>
+              <i
+                class="fas fa-briefcase"
+                style="margin-left: 12px; margin-right: 8px; color: #502c0b"
+              ></i
+              >Ish uchun
+            </button>
+            <button>
+              <i
+                class="fas fa-paw"
+                style="margin-left: 12px; margin-right: 8px; color: #000000"
+              ></i
+              >Hayvonlar
+            </button>
+            <button>
+              <i
+                class="fas fa-couch"
+                style="margin-left: 12px; margin-right: 8px; color: #02b5aa"
+              ></i
+              >Mebel
+            </button>
+            <button>
+              <i
+                class="fas fa-mobile-alt"
+                style="margin-left: 12px; margin-right: 8px; color: #3c7c0a"
+              ></i
+              >Elektr jihozlari
+            </button>
+            <button>
+              <i
+                class="fa-solid fa-bell-concierge"
+                style="margin-left: 12px; margin-right: 8px; color: #ff0000"
+              ></i
+              >Xizmatlar
+            </button>
+            <button>
+              <i
+                class="fas fa-graduation-cap"
+                style="margin-left: 12px; margin-right: 8px; color: #000000"
+              ></i
+              >Ta’lim
+            </button>
+          </div>
+        </div>
+        <div class="header__navbar">
+          <ul>
+            <li><a href="home.html">Bosh menyu</a></li>
+            <li><a href="narxlar.html">Narxlar</a></li>
+            <li>
+              <a href="#">Mening profilim</a>
+              <i class="fa-solid fa-circle-user"></i>
+            </li>
+            <button class="menu" onclick="menu()">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="menu">
+              <div>
+                <i class="fa-solid fa-circle-user"></i>
+                <div>
+                  <h4>Bekzod</h4>
+                  <h5>id: 4867258648</h5>
+                </div>
+              </div>
+              <a href="sara.html">Saralanganlar</a>
+              <a href="#qoshimcha">Qo’shimcha xizmatlar</a>
+              <a href="#taklif">Maxsus takliflar</a>
+              <a href="dostavka.html">Dostavka xizmati</a>
+              <a href="#">Sozlamalar</a>
+              <a href="pro.html">Premium</a>
+              <a href="#">Chiqish</a>
+            </div>
+            <a href="elon.html">E’lon Berish</a>
+          </ul>
+          <form action="">
+            <div>
+              <i class="fa-solid fa-search"></i>
+              <input type="search" placeholder=" Qidirmoq..." />
+            </div>
+            <button>Uz</button>
+            <button>Ru</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="page__nav">
+          <a class="back" href="">
+            <i class="fa-solid fa-chevron-left"></i>Orqaga</a
+          >
+          <a href="">Elektr jihozlari</a>
+          <a href="">/Geymerlar uchun</a>
+          <a href="">/Kompyuterlar</a>
+        </div>
+
+        <div class="page__block elon1">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="item"><img src="images/big_img.png" alt="" /></div>
+            <div class="item"><img src="images/big_img.png" alt="" /></div>
+            <div class="item"><img src="images/big_img.png" alt="" /></div>
+            <div class="item"><img src="images/big_img.png" alt="" /></div>
+          </div>
+
+          <div class="page__block__card">
+            <h4>Foydalanuvchi:</h4>
+            <div>
+              <i class="fa-solid fa-circle-user"></i>
+              <div>
+                <h3>998911211428</h3>
+                <h5>MBazar da oxirgi marta bugun 18:18 da faol edi.</h5>
+                <h4>Foydalanuvchining boshqa e’lonlari</h4>
+              </div>
+            </div>
+            <div>
+              <button>Qo’ng’iroq qilish</button>
+              <button>Xabar yozish</button>
+            </div>
+
+            <div>
+              <div>
+                <h3>Joylashuvi:</h3>
+                <h5>Google xaritada ochish:</h5>
+                <h6>
+                  <i class="fa-solid fa-map-marker-alt"></i> Toshkent /
+                  Shayxontoxur /
+                </h6>
+              </div>
+              <img src="images/map.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="page__block elon2">
+          <div class="page__block__card">
+            <h5>Joylashtirildi: 2022.06.28</h5>
+            <h3>Core i9 Max Full HD, GTX GeForce 2080</h3>
+            <h2>20 300 000 sum</h2>
+
+            <div>
+              <a href=""><i class="fa-solid fa-bookmark"></i> Reklama qilish</a>
+              <a href=""
+                ><i class="fa-solid fa-heart"></i> Yoqtirishlarga qo’shish</a
+              >
+            </div>
+            <h4><i class="fa-solid fa-circle-user"></i> Jismoniy shaxs</h4>
+            <h3>Tavsif:</h3>
+            <p>
+              11та камютер стол стули билан 24талик кондиционер холодилник бар
+              сони плейстейшн диван эскирок таййор бизнес
+            </p>
+            <div>
+              <h4>ID: 135363663</h4>
+              <h4>Ko’rishlar: 652</h4>
+              <a><i class="fa-solid fa-flag"></i> Shikoyat qilish</a>
+            </div>
+          </div>
+          <div class="page__block__card">
+            <h4>Foydalanuvchi:</h4>
+            <div>
+              <i class="fa-solid fa-circle-user"></i>
+
+              <div>
+                <h3>998911211428</h3>
+                <h5>MBazar da oxirgi marta bugun 18:18 da faol edi.</h5>
+              </div>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Xabar yozish..." />
+              <div>
+                <button>
+                  <i class="fa-solid fa-file"><font> Fayl bitiktirish</font></i>
+                </button>
+                <input type="submit" value="Yuborish" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="page__block elon3">
+          <h2>O'xshash e`lonlar</h2>
+
+          <div class="owl-carousel2 owl-carousel owl-theme">
+            <div class="item">
+              <img src="images/elon1.png" alt="" />
+              <h3>Acer Gaming i7 <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/elon2.png" alt="" />
+              <h3>GIGABYTE RTX <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/elon3.png" alt="" />
+              <h3>ASUS for gaming <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/elon1.png" alt="" />
+              <h3>Acer Gaming i7 <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/elon2.png" alt="" />
+              <h3>GIGABYTE RTX <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="images/elon3.png" alt="" />
+              <h3>ASUS for gaming <i class="fa-solid fa-heart"></i></h3>
+              <h5>Toshkent <i class="fa-solid fa-map-marker-alt"></i></h5>
+              <div>
+                <h4>1.000.000 UZS</h4>
+                <button>Batafsil</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__links">
+          <div>
+            <img src="images/header__icon.png" alt="" />
+            <p>
+              Funking is the a popular Ecommerce site. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </p>
+            <div>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""> <i class="fa-brands fa-pinterest"></i></a>
+              <a href=""> <i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+
+          <div>
+            <h3>Help</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Track Your Order</a>
+          </div>
+          <div>
+            <h3>Store</h3>
+            <a href="">Furniture</a>
+            <a href="">Tabble</a>
+            <a href="">Sofa</a>
+            <a href="">Other</a>
+          </div>
+          <div>
+            <h3>Supports</h3>
+            <a href="">Feedback </a>
+            <a href="">Cotact us</a>
+            <a href="">Download app</a>
+            <a href="">Terms condition</a>
+          </div>
+        </div>
+
+        <div class="all">
+          <div>
+            <h4>© 2022 Milliy Bozor - All rights reserved.</h4>
+          </div>
+          <div>
+            <a href="">Privacy</a>
+            <a href="">Security</a>
+            <a href="">Terms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>

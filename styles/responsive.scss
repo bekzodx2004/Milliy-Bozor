@@ -1,0 +1,64 @@
+@media screen and (max-width: 1200px) {
+  .sayt {
+    & > .page {
+      & >.elon1 {
+        & > :nth-child(2) {
+          max-width: 600px;
+          width: 90%;
+        }
+      }
+
+      & >.elon2 {
+        & > :nth-child(2) {
+          max-width: 600px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .sayt {
+    &>.header{
+      &>.header__navbar{
+      
+       &>form{
+      
+        margin: auto;
+    
+       }
+      }
+    }
+
+    &>.footer{
+        &>.footer__links{
+            justify-content: center;
+        }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .sayt{
+    &>.page{
+      &>.elon1{
+        &>.owl-carousel{
+          width: 90%;
+          height: 190px;
+          overflow: hidden;
+  
+          &>.owl-nav{
+            top: 30%;
+          }
+        }
+      }
+
+    }
+    &>.footer{
+      &>.all{
+        justify-content: space-evenly;
+        text-align: center;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,1889 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+.sayt {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.sayt > .header {
+  padding-top: 16px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.sayt > .header > .header__icon {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sayt > .header > .header__icon > button {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+.sayt > .header > .header__icon > button > img {
+  margin-right: 20px;
+}
+.sayt > .header > .header__icon > .toifalar {
+  width: 205px;
+  height: 453px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 5;
+  display: none;
+}
+.sayt > .header > .header__icon > .toifalar > button {
+  width: 193px;
+  height: 36px;
+  border: none;
+  background: #e5e5e5;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  text-align: left;
+  color: #1d1d1d;
+  padding-right: 12px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.sayt > .header > .header__navbar {
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .header > .header__navbar > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.sayt > .header > .header__navbar > ul > .menu {
+  width: 30px;
+  color: #746d6d;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  border: none;
+}
+.sayt > .header > .header__navbar > ul > a {
+  border: none;
+  width: 160px;
+  height: 45px;
+  margin: 18px;
+  background: #ff1111;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  /* identical to box height */
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+.sayt > .header > .header__navbar > ul > li {
+  margin: 18px;
+  list-style: none;
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .header > .header__navbar > ul > li > a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.sayt > .header > .header__navbar > ul > li > a:hover {
+  color: #746d6d;
+  border-bottom: 1px solid #ff1111;
+}
+.sayt > .header > .header__navbar > ul #menu {
+  z-index: 10;
+  position: absolute;
+  bottom: -400px;
+  right: 10%;
+  width: 252px;
+  height: 397px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background: #ffffff;
+  border: 0.5px solid rgba(130, 130, 131, 0.25);
+  border-radius: 10px;
+  display: none;
+}
+.sayt > .header > .header__navbar > ul #menu > div {
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 11px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  margin: 0;
+}
+.sayt > .header > .header__navbar > ul #menu > div > i {
+  font-size: 50px;
+  margin-right: 16px;
+}
+.sayt > .header > .header__navbar > ul #menu > div > div {
+  box-sizing: border-box;
+}
+.sayt > .header > .header__navbar > ul #menu > div > div > h4 {
+  font-weight: 600;
+  font-size: 14px;
+  /* identical to box height */
+  color: #000000;
+}
+.sayt > .header > .header__navbar > ul #menu > div > div > h5 {
+  font-weight: 500;
+  font-size: 13px;
+  /* identical to box height */
+  color: #ff1111;
+}
+.sayt > .header > .header__navbar > ul #menu > a {
+  margin: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  height: 40px;
+  /* identical to box height */
+  border-top: 1px solid #c4c4c4;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+}
+.sayt > .header > .header__navbar > ul #menu > a:hover {
+  text-shadow: 0 0 15px;
+}
+.sayt > .header > .header__navbar > ul #menu > :nth-child(7) {
+  color: #ff1111;
+}
+.sayt > .header > .header__navbar > ul > a {
+  text-decoration: none;
+}
+.sayt > .header > .header__navbar > form {
+  max-width: 325px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+.sayt > .header > .header__navbar > form > div {
+  position: relative;
+  max-width: 200px;
+  width: 100%;
+  height: 30px;
+  padding-top: 6px;
+  margin-right: 37px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.sayt > .header > .header__navbar > form > div > i {
+  color: #746d6d;
+  margin-right: 15px;
+  margin-left: 17px;
+  margin-top: -7px;
+}
+.sayt > .header > .header__navbar > form > div > input {
+  padding-left: 35px;
+  position: absolute;
+  border-radius: 10px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.sayt > .header > .header__navbar > form > button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  height: 20px;
+  padding-top: 0;
+}
+.sayt > .header > .header__navbar > form > button:hover {
+  color: #746d6d;
+}
+.sayt > .header > .header__navbar > form > button:nth-child(3) {
+  border-left: 1px solid #1d1d1d;
+}
+.sayt > .page > .page__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
+  margin-top: 70px;
+}
+.sayt > .page > .page__nav > a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  /* identical to box height */
+  color: #746d6d;
+}
+.sayt > .page > .page__nav > .back {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #1d1d1d;
+  margin-right: 25px;
+}
+.sayt > .page > .page__block {
+  max-width: 1142px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 46px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1px solid #746d6d;
+  border-radius: 15px;
+}
+.sayt > .page > .page__block > .page__block__card {
+  background-color: #ff1111;
+  margin-top: 33px;
+  border-radius: 10px;
+  min-height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: sv;
+}
+.sayt > .page > .elon1 {
+  padding-bottom: 33px;
+}
+.sayt > .page > .elon1 > .owl-carousel1 {
+  max-width: 602px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 33px;
+  position: relative;
+}
+.sayt > .page > .elon1 > .owl-carousel1 > .owl-stage-outer > .owl-stage {
+  border-radius: 10px;
+}
+.sayt > .page > .elon1 > .owl-carousel1 > .owl-nav {
+  position: absolute;
+  top: 42%;
+  max-width: 602px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sayt > .page > .elon1 > .owl-carousel1 > .owl-nav > button {
+  background: #fff;
+  width: 25px;
+  color: #ff1111;
+  font-size: 25px;
+}
+.sayt > .page > .elon1 > .owl-carousel1 > .owl-dots {
+  position: absolute;
+  bottom: 2%;
+  max-width: 602px;
+  width: 100%;
+}
+.sayt > .page > .elon1 > :nth-child(2) {
+  max-width: 410px;
+  width: 90%;
+  color: #ffffff;
+  min-height: 404px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+  /* identical to box height */
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) > i {
+  font-size: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) > div {
+  max-width: 202px;
+  width: 100%;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) > div > h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) > div > h5 {
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(2) > div > h4 {
+  font-weight: 600;
+  font-size: 11px;
+  /* identical to box height */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #ffffff;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(3) > button {
+  width: 148px;
+  height: 42px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(3) > :nth-child(1) {
+  border: none;
+  background: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  /* identical to box height */
+  margin: 10px;
+  color: #1d1d1d;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(3) > :nth-child(2) {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 10px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(4) > :nth-child(1) > h3 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(4) > :nth-child(1) > h5 {
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+.sayt > .page > .elon1 > :nth-child(2) > :nth-child(4) > :nth-child(1) > h6 {
+  font-weight: 500;
+  font-size: 13px;
+  /* identical to box height */
+  color: rgba(255, 255, 255, 0.72);
+}
+.sayt > .page > .elon2 {
+  color: #fff;
+  padding-bottom: 33px;
+}
+.sayt > .page > .elon2 > :nth-child(1) {
+  max-width: 602px;
+  width: 90%;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sayt > .page > .elon2 > :nth-child(1) > h5 {
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  color: rgba(255, 255, 255, 0.72);
+}
+.sayt > .page > .elon2 > :nth-child(1) > h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -15px;
+}
+.sayt > .page > .elon2 > :nth-child(1) > h2 {
+  font-weight: 300;
+  font-size: 24px;
+}
+.sayt > .page > .elon2 > :nth-child(1) > :nth-child(4) > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  color: rgba(255, 255, 255, 0.72);
+}
+.sayt > .page > .elon2 > :nth-child(1) > :nth-child(4) > a > i {
+  color: #fff;
+}
+.sayt > .page > .elon2 > :nth-child(1) > h4 {
+  font-weight: 600;
+  font-size: 12px;
+}
+.sayt > .page > .elon2 > :nth-child(1) > :nth-child(6) {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+.sayt > .page > .elon2 > :nth-child(1) > p {
+  font-weight: 400;
+  font-size: 12px;
+  max-width: 483px;
+  width: 90%;
+  color: rgba(255, 255, 255, 0.73);
+}
+.sayt > .page > .elon2 > :nth-child(1) > :nth-child(8) {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: space-between;
+  color: #1d1d1d;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.sayt > .page > .elon2 > :nth-child(1) > :nth-child(8) > h4 {
+  margin: 0 10px;
+}
+.sayt > .page > .elon2 > :nth-child(2) {
+  max-width: 410px;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 33px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sayt > .page > .elon2 > :nth-child(2) > h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.sayt > .page > .elon2 > :nth-child(2) > :nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .page > .elon2 > :nth-child(2) > :nth-child(2) > i {
+  font-size: 50px;
+  height: 50px;
+  background: #000;
+  border-radius: 50%;
+}
+.sayt > .page > .elon2 > :nth-child(2) > :nth-child(2) > :nth-child(2) {
+  max-width: 184px;
+  width: 100%;
+  margin-left: 18px;
+}
+.sayt > .page > .elon2 > :nth-child(2) > form > input[type=text] {
+  max-width: 343px;
+  width: 100%;
+  height: 170px;
+  box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.38);
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 14px;
+  margin-top: 5px;
+}
+.sayt > .page > .elon2 > :nth-child(2) > form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sayt > .page > .elon2 > :nth-child(2) > form > div > button {
+  margin-top: 17px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.sayt > .page > .elon2 > :nth-child(2) > form > div > :nth-child(2) {
+  margin-top: 17px;
+  width: 148px;
+  height: 42px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.sayt > .page > .elon3 {
+  display: block;
+}
+.sayt > .page > .elon3 > h2 {
+  margin-left: 5%;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.sayt > .page > .elon3 > .owl-carousel2 {
+  max-width: 1072px;
+  width: 90%;
+  margin: auto;
+  margin-top: 31px;
+  margin-bottom: 68px;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage {
+  border-radius: 10px;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  /* identical to box height */
+  color: #1d1d1d;
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > h3 > i {
+  color: #ff1111;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > h5 {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  margin-top: 20px;
+  color: #1d1d1d;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > div {
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 30px;
+  margin-bottom: 33px;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > div > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .page > .elon3 > .owl-carousel2 > .owl-stage-outer > .owl-stage > .owl-item > .item > div > button {
+  max-width: 104px;
+  width: 100%;
+  background: #ff1111;
+  border-radius: 7px;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .footer {
+  max-width: 1142px;
+  width: 99%;
+  margin: auto;
+}
+.sayt > .footer > .footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sayt > .footer > .footer__links > div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.sayt > .footer > .footer__links > div > img {
+  max-width: 170px;
+  margin-top: 7px;
+}
+.sayt > .footer > .footer__links > div > p {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #746d6d;
+}
+.sayt > .footer > .footer__links > div > a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #746d6d;
+  margin-top: 7px;
+}
+.sayt > .footer > .footer__links > div > a:hover {
+  color: #ff1111;
+  text-shadow: 0 0 5px #ff1111;
+}
+.sayt > .footer > .footer__links > div > div {
+  padding-top: 20px;
+}
+.sayt > .footer > .footer__links > div > div > a {
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 19px;
+}
+.sayt > .footer > .footer__links > div > div > a > i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ff1111;
+  color: #fff;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.sayt > .footer > .footer__links > div > div > a > i:hover {
+  box-shadow: 0 0 15px #433d3d;
+}
+.sayt > .footer > .footer__links > :nth-child(1) {
+  max-width: 300px;
+  width: 90%;
+}
+.sayt > .footer > .footer__links > :nth-child(2) {
+  max-width: 160px;
+  width: 90%;
+}
+.sayt > .footer > .footer__links > :nth-child(3) {
+  max-width: 100px;
+  width: 90%;
+}
+.sayt > .footer > .footer__links > :nth-child(4) {
+  max-width: 150px;
+  width: 90%;
+}
+.sayt > .footer > .all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 120px;
+}
+.sayt > .footer > .all > h4 {
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #746d6d;
+}
+.sayt > .footer > .all > div > a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  margin-right: 30px;
+  color: #746d6d;
+}
+.sayt > .footer > .all > div > a:hover {
+  text-shadow: 0 0 5px #ff1111;
+  color: #ff1111;
+}
+.sayt > .find {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sayt > .find > div {
+  max-width: 613px;
+  width: 100%;
+  margin-top: 60px;
+}
+.sayt > .find > div > h1 {
+  width: 90%;
+  margin: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  color: #1d1d1d;
+}
+.sayt > .find > div > p {
+  width: 90%;
+  margin: auto;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #746d6d;
+}
+.sayt > .find > div > div {
+  max-width: 324px;
+  width: 90%;
+  margin-left: 5%;
+  background: #ff1111;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .find > div > div > :nth-child(1) > a {
+  margin: 22px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .find > div > div > ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 16px;
+  /* identical to box height */
+  margin-left: 25px;
+  color: #c4c4c4;
+  position: relative;
+}
+.sayt > .find > div > div > ul > li {
+  list-style: none;
+}
+.sayt > .find > div > div > ul > li > ul {
+  display: none;
+  position: absolute;
+  background: #000;
+  z-index: 5;
+}
+.sayt > .find > div > div > ul > li > ul > li {
+  list-style: none;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.sayt > .find > div > div > ul > li > ul > li:hover {
+  background-color: gold;
+  color: red;
+}
+.sayt > .find > div > div > .ul1 :hover .viloyat {
+  display: block;
+}
+.sayt > .find > div > div > .ul2:hover .valyuta {
+  display: block;
+}
+.sayt > .find > div > div > div {
+  display: flex;
+}
+.sayt > .find > div > div > div > h3 {
+  font-weight: 600;
+  font-size: 18px;
+  /* identical to box height */
+  margin: 24px;
+  color: #ffffff;
+}
+.sayt > .find > img {
+  max-width: 480px;
+  width: 90%;
+  margin-top: 60px;
+  max-height: 451px;
+}
+.sayt > .rubriki {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  margin-top: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.sayt > .rubriki > .rubriki__card {
+  max-width: 228px;
+  width: 100%;
+  margin: 15px;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff1111;
+  border-radius: 7px;
+}
+.sayt > .rubriki > .rubriki__card > h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .rubriki > .rubriki__card > h4 > i {
+  margin-right: 14px;
+}
+.sayt > .premium {
+  background-color: #ff1111;
+  overflow: hidden;
+  padding-bottom: 33px;
+}
+.sayt > .premium > h2 {
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 48px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .premium > .tovar {
+  max-width: 625px;
+  width: 90%;
+  min-height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.sayt > .premium > .tovar > a {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+.sayt > .premium > .tovar > a:hover {
+  color: #ff1111;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card {
+  width: 300px;
+  height: 400px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding-bottom: 33px;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > img {
+  width: 100%;
+  height: 200px;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > h3 {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 24px;
+  /* identical to box height */
+  margin-left: 30px;
+  color: #1d1d1d;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > h3 > i {
+  color: #ff1111;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > h5 {
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  margin-left: 30px;
+  color: #1d1d1d;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > div {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 22px;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > div > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .premium > .owl-carousel9 > .owl-stage-outer > .owl-stage > .owl-item > .item > .premium__cards > .premium__cards__card > div > button {
+  background: #ff1111;
+  border-radius: 7px;
+  border: none;
+  max-width: 104px;
+  width: 100%;
+  height: 27px;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  justify-content: space-evenly;
+  padding-top: 38px;
+}
+.sayt > .taklif > div {
+  max-width: 600px;
+  width: 90%;
+  min-height: 400px;
+  margin-top: 30px;
+}
+.sayt > .taklif > div > div {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.sayt > .taklif > :nth-child(1) {
+  background: url(../images/taklif1.jpg) no-repeat center center/cover;
+  box-sizing: border-box;
+  padding-top: 36px;
+  padding-left: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+.sayt > .taklif > :nth-child(1) > h3 {
+  font-weight: 600;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(1) > h4 {
+  font-weight: 500;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ff1111;
+}
+.sayt > .taklif > :nth-child(1) > a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(1) > a:hover {
+  color: #ff1111;
+  text-shadow: 0 0 5px #ff1111;
+}
+.sayt > .taklif > :nth-child(2) {
+  max-width: 512px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(1) {
+  min-height: 190px;
+  box-sizing: border-box;
+  padding-top: 36px;
+  padding-left: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: url(../images/taklif2.png) no-repeat center center/cover;
+  position: relative;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(1) > h3 {
+  font-weight: 600;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(1) > h4 {
+  font-weight: 500;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ff1111;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(1) > a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(1) > a:hover {
+  color: #ff1111;
+  text-shadow: 0 0 5px #ff1111;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(2) {
+  min-height: 190px;
+  box-sizing: border-box;
+  padding-top: 36px;
+  padding-left: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: url(../images/taklif3.png) no-repeat center center/cover;
+  position: relative;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(2) > h3 {
+  font-weight: 600;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(2) > h4 {
+  font-weight: 500;
+  font-size: 22px;
+  /* identical to box height */
+  color: #ff1111;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(2) > a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .taklif > :nth-child(2) > :nth-child(2) > a:hover {
+  color: #ff1111;
+  text-shadow: 0 0 5px #ff1111;
+}
+.sayt > .maxsusT {
+  padding-bottom: 40px;
+}
+.sayt > .maxsusT > h1 {
+  text-align: center;
+  margin-top: 22px;
+  font-weight: 700;
+  font-size: 40px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+.sayt > .maxsusT > div {
+  max-width: 1142px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sayt > .maxsusT > div > div {
+  padding-bottom: 35px;
+  margin-top: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 550px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 34px;
+  padding-left: 28px;
+  position: relative;
+}
+.sayt > .maxsusT > div > div > h3 {
+  font-weight: 700;
+  font-size: 22px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .maxsusT > div > div > p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #746d6d;
+  width: 229px;
+}
+.sayt > .maxsusT > div > div > :nth-child(3) {
+  display: flex;
+  max-width: 230px;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.sayt > .maxsusT > div > div > :nth-child(3) > h4 {
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  letter-spacing: 0.155em;
+  color: #ff1111;
+}
+.sayt > .maxsusT > div > div > :nth-child(3) > h4 > font {
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  letter-spacing: 0.155em;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #746d6d;
+}
+.sayt > .maxsusT > div > div > :nth-child(3) > button {
+  border: none;
+  width: 125px;
+  height: 25px;
+  background: #ff1111;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 9px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+}
+.sayt > .maxsusT > div > div > :nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  max-width: 230px;
+  padding-top: 21px;
+}
+.sayt > .maxsusT > div > div > :nth-child(4) > h4 {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-top: 5px;
+  border-radius: 50%;
+  vertical-align: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9px;
+  /* identical to box height */
+  background: #ff1111;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sayt > .maxsusT > div > div > .chegirma {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+  background: #ff1111;
+  border-radius: 0px 0px 0px 7px;
+}
+.sayt > .maxsusT > div > :nth-child(1) {
+  background: url(../images/taklif4.png) no-repeat center center/cover;
+}
+.sayt > .maxsusT > div > :nth-child(2) {
+  background: url(../images/taklif5.png) no-repeat center center/cover;
+}
+.sayt > .customer > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  /* identical to box height */
+  text-transform: uppercase;
+  text-align: center;
+  color: #1d1d1d;
+}
+.sayt > .customer > .owl-customer {
+  max-width: 1142px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 55px;
+}
+.sayt > .customer > .owl-customer > .owl-stage-outer > .owl-stage > .owl-item > .item > .card {
+  max-width: 566px;
+  width: 80%;
+  margin: auto;
+  padding-top: 22px;
+}
+.sayt > .customer > .owl-customer > .owl-stage-outer > .owl-stage > .owl-item > .item > .card > img {
+  width: 88px;
+  margin: auto;
+}
+.sayt > .customer > .owl-customer > .owl-stage-outer > .owl-stage > .owl-item > .item > .card > p {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 38px;
+  color: #1d1d1d;
+}
+.sayt > .customer > .owl-customer > .owl-stage-outer > .owl-stage > .owl-item > .item > .card > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  /* identical to box height */
+  margin-top: 38px;
+  text-align: center;
+  color: #ff1111;
+}
+.sayt > .customer > .owl-customer > .owl-stage-outer > .owl-stage > .owl-item > .item > .card > h6 {
+  font-weight: 500;
+  font-size: 14px;
+  /* identical to box height */
+  text-align: center;
+  margin-top: 5px;
+  color: #1d1d1d;
+}
+.sayt > .customer > .owl-customer > .owl-nav {
+  position: absolute;
+  top: 30%;
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.sayt > .customer > .owl-customer > .owl-nav > button {
+  color: #ff1111;
+  font-size: 80px;
+  font-family: poppins;
+  height: 0px;
+}
+.sayt > .customer > .owl-customer > .owl-nav > button :focus {
+  background-color: transparent;
+}
+.sayt > .qoshimcha {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+}
+.sayt > .qoshimcha > h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #1d1d1d;
+}
+.sayt > .qoshimcha > .qoshimcha__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card {
+  max-width: 550px;
+  width: 90%;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-bottom: 23px;
+  padding-left: 10%;
+  color: #fff;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card > div {
+  display: flex;
+  align-items: center;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card > div > button {
+  margin-right: 12px;
+  width: 129px;
+  height: 34px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ff1111;
+  border-radius: 6px;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card > div > h4 {
+  font-weight: 500;
+  font-size: 14px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card > h2 {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > .qoshimcha__cards__card > a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  /* identical to box height */
+  color: #c4c4c4;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > :nth-child(1) {
+  background: url(../images/q1.png) no-repeat center center/cover;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > :nth-child(2) {
+  background: url(../images/q2.png) no-repeat center center/cover;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > :nth-child(3) {
+  background: url(../images/q3.png) no-repeat center center/cover;
+}
+.sayt > .qoshimcha > .qoshimcha__cards > :nth-child(4) {
+  background: url(../images/q4.png) no-repeat center center/cover;
+}
+.sayt > .saraMenu {
+  background-color: #ff1111;
+  padding-top: 83px;
+  padding-bottom: 10px;
+}
+.sayt > .saraMenu > div {
+  max-width: 1142px;
+  width: 90%;
+  margin: auto;
+}
+.sayt > .saraMenu > div > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  /* identical to box height */
+  margin-bottom: 34px;
+  color: #ffffff;
+}
+.sayt > .saraMenu > div > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .saraMenu > div > div > a {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  /* identical to box height */
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 20px;
+  margin-right: 57px;
+}
+.sayt > .sarabody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.sayt > .sarabody > h3 {
+  margin-top: 17px;
+  font-weight: 600;
+  font-size: 20px;
+  /* identical to box height */
+  color: #000000;
+}
+.sayt > .sarabody > p {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #746d6d;
+}
+.sayt > .yetkazish {
+  margin: auto;
+  text-align: center;
+  margin-top: 86px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.sayt > .xavfsiz {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+.sayt > .xavfsiz > div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 480px;
+  width: 80%;
+}
+.sayt > .xavfsiz > div > h3 {
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.sayt > .xavfsiz > div > p {
+  font-weight: 400;
+  font-size: 16px;
+}
+.sayt > .afzallik {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 28px;
+  padding-bottom: 50px;
+}
+.sayt > .afzallik > div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 480px;
+  width: 80%;
+}
+.sayt > .afzallik > div h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.sayt > .afzallik > div > ul {
+  list-style: none;
+}
+.sayt > .afzallik > div > ul li::before {
+  content: "•";
+  color: #ff1111;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.sayt > .jonatmaTel {
+  max-width: 1142px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ff1111;
+  border-radius: 15px;
+  padding: 47px;
+  box-sizing: border-box;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+.sayt > .jonatmaTel > h3 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+.sayt > .pro {
+  max-width: 1142px;
+  width: 100%;
+  margin: auto;
+}
+.sayt > .pro > h2 {
+  margin-top: 66px;
+  font-weight: 600;
+  font-size: 52px;
+  text-align: center;
+}
+.sayt > .pro > p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+.sayt > .pro > .pro__tarif {
+  padding-top: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 42px;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card {
+  width: 300px;
+  padding-top: 54px;
+  padding-bottom: 23px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 47px;
+  margin-bottom: 35px;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h3 > font {
+  color: #ff1111;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 9px;
+  margin-left: 47px;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h4 > .fa-circle-check {
+  color: #ff1111;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h4 > i {
+  margin-right: 11px;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h6 {
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: rgba(130, 130, 131, 0.57);
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h5 {
+  font-weight: 400;
+  font-size: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #746d6d;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > h5 > font {
+  color: #ff1111;
+}
+.sayt > .pro > .pro__tarif > .pro__tarif__card > button {
+  background: #ff1111;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  width: 277px;
+  height: 48px;
+  margin: auto;
+  margin-top: 21px;
+}
+.sayt > .pro > .tolov {
+  max-width: 1142px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 15px;
+  padding: 46px 0;
+}
+.sayt > .elon {
+  max-width: 1142px;
+  width: 90%;
+  margin: auto;
+  padding-top: 70px;
+}
+.sayt > .elon > h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.sayt > .elon > div {
+  background-color: #ff1111;
+  margin-top: 16px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+.sayt > .elon > .elon__tur {
+  padding: 40px 5%;
+  padding-bottom: 26px;
+}
+.sayt > .elon > .elon__tur > h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.sayt > .elon > .elon__tur > form > input {
+  margin-top: 45px;
+  border: none;
+  max-width: 550px;
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 26px;
+}
+.sayt > .elon > .elon__tur > form > select {
+  border: none;
+  max-width: 306px;
+  width: 100%;
+  height: 76px;
+  border-radius: 5px;
+  margin-top: 12px;
+  padding-left: 15px;
+}
+.sayt > .elon > .elon__rasm {
+  padding-left: 5%;
+  padding-top: 40px;
+  padding-bottom: 28px;
+}
+.sayt > .elon > .elon__rasm > h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.sayt > .elon > .elon__rasm > .elon__rasm__img {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 790px;
+  width: 100%;
+}
+.sayt > .elon > .elon__rasm > .elon__rasm__img > div {
+  width: 160px;
+  height: 120px;
+  background: url(../images/Vector.png) no-repeat center center, white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 15px;
+  color: #000;
+}
+.sayt > .elon > .elon__rasm > .elon__rasm__img > div > input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.sayt > .elon > .elon__rasm > .elon__rasm__img > :nth-child(1) {
+  background: url(../images/Frame\ 28.png);
+}
+.sayt > .elon > .elon__tavsif {
+  padding: 5%;
+  padding-top: 40px;
+  padding-bottom: 51px;
+}
+.sayt > .elon > .elon__tavsif > h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.sayt > .elon > .elon__tavsif > form {
+  position: relative;
+}
+.sayt > .elon > .elon__tavsif > form > input {
+  padding-left: 3%;
+  max-width: 714px;
+  width: 90%;
+  height: 241px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.sayt > .elon > .elon__tavsif > form > h5 {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  /* identical to box height */
+  margin-left: 28px;
+  color: rgba(255, 17, 17, 0.53);
+}
+.sayt > .elon > .elon__tavsif > h5 {
+  font-weight: 500;
+  font-size: 11px;
+  /* identical to box height */
+  margin-top: 23px;
+  color: #ffffff;
+}
+.sayt > .elon > .elon__aloqa {
+  padding-top: 40px;
+  padding-bottom: 64px;
+  padding-left: 5%;
+}
+.sayt > .elon > .elon__aloqa > form {
+  display: flex;
+  flex-direction: column;
+  max-width: 369px;
+  width: 90%;
+}
+.sayt > .elon > .elon__aloqa > form > label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.sayt > .elon > .elon__aloqa > form > input {
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 7px;
+  padding-left: 25px;
+}
+.sayt > .elon > .elon__aloqa > form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sayt > .elon > .elon__aloqa > form > div > button {
+  width: 217px;
+  height: 44px;
+  border: none;
+  margin-top: 44px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.sayt > .elon > .elon__aloqa > form > div > a {
+  font-weight: 700;
+  font-size: 16px;
+  /* identical to box height */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #ffffff;
+}
+.sayt > .narxlar {
+  max-width: 1142px;
+  width: 95%;
+  margin: auto;
+}
+.sayt > .narxlar > .narxlar__ruknlar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sayt > .narxlar > .narxlar__ruknlar > div {
+  margin-top: 18px;
+  margin-right: 25px;
+}
+.sayt > .narxlar > .narxlar__ruknlar > div > div {
+  background: #e5e5e5;
+  border-radius: 10px;
+  width: 193px;
+  height: 36px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .narxlar > .narxlar__ruknlar > div > form > input {
+  width: 76px;
+  height: 36px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.sayt > .narxlar > .narxlar__ruknlar > div > select {
+  border: none;
+  background: #e5e5e5;
+  border-radius: 10px;
+  height: 36px;
+  width: 170px;
+  padding-left: 17px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.sayt > .narxlar > .narxlar__select > select {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #1d1d1d;
+  border: none;
+  margin-right: 30px;
+  height: 36px;
+}
+.sayt > .narxlar > h5 {
+  margin-top: 33px;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 14px;
+  /* identical to box height */
+  color: #746d6d;
+}
+.sayt > .narxlar > .narxlar__natija {
+  display: flex;
+}
+.sayt > .narxlar > .narxlar__natija > h3 {
+  margin-right: 28px;
+  font-weight: 600;
+  font-size: 16px;
+  /* identical to box height */
+  color: #1d1d1d;
+}
+.sayt > .narxlar > .narxlar__natija > h3 > font {
+  color: #ff1111;
+}
+.sayt > .narxlar > .narxlar__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: 47px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 260px;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card > button {
+  position: absolute;
+  top: 157px;
+  right: 22px;
+  width: 104px;
+  height: 27px;
+  border: none;
+  background: #ff1111;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  color: #ffffff;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card > h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card > h5 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card > h4 {
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height */
+  margin-top: 26px;
+  margin-bottom: 17px;
+  margin-left: 30px;
+  color: #1d1d1d;
+}
+.sayt > .narxlar > .narxlar__cards > .narxlar__cards__card > h4 > i {
+  margin-left: 70px;
+  color: #ff1111;
+}/*# sourceMappingURL=style.css.map */
